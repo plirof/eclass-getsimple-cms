@@ -1,0 +1,56 @@
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	#container {
+		width: 95%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 33%;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	#header {
+		height:120px;
+	}
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+		border-top:1px solid #dcdcdc;
+		border-left:none;
+		padding-top:15px;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size:14px;
+	}
+	#header {
+		height:90px;
+	}
+	#header .socialIcons {
+		float:right;
+		padding:14px 15px 0 0;
+	}
+	#navcontainer ul li a {
+		padding: 4px 8px;
+	}
+	#footer {
+		font-size:10px;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto; /* ie8 */
+}

@@ -1,0 +1,281 @@
+/********************************************************************************************************************
+*
+* @File: 		style.css
+* @Package:		Christophe AUBRY, http://www.netplume.net
+* @Action:		SimpleNature theme, based on Domestic template : http://www.freecsstemplates.org/preview/domestic/
+*
+********************************************************************************************************************/
+
+/* Main Styles */
+html {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #8A8985;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #F1F2E9;
+}
+
+/* Text Styles */
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	color: #7D7764;
+}
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+	font-size: .8em;
+}
+.list-style1 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-style1 li {
+	padding: 7px 0 7px 0;
+	border-top: 1px dotted #8A8985;
+}
+.list-style1 .first {
+	padding-top: 0;
+	border-top: none;
+}
+.list-style2 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-style2 li {
+	padding: 7px 0 7px 0;
+	border-top: 1px solid #E0E1D6;
+}
+.list-style2 a {
+	text-shadow: 1px 1px 0 #FFFFFF;
+	color: #909090;
+}
+.list-style2 a:hover {
+	text-decoration: underline;
+	color: #909090;
+}
+.list-style2 .first {
+	padding-top: 0;
+	border-top: none;
+	background: none;
+}
+
+/* Link Styles */
+a {
+	text-decoration: none;
+	color: #40745E;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Layout */
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* Menu */
+#menubar {
+	background: #40745E;
+	height: 53px;
+}
+#menu {
+	height: 52px;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+}
+#menu a {
+	display: block;
+	padding: 0 30px;
+	line-height: 52px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	color: #FFFFFF;
+}
+#menu a:hover, #menu .current_page_item a {
+	background: #325A49;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#menu li.current {
+	background: #325A49;
+}
+
+/* Banner */
+
+/*******************************
+Use this component for the banner :
+<?php get_component('tagline'); ?>
+********************************/
+#banner {
+	height: 200px;
+	border-bottom: 10px solid #E5E6DD;
+}
+#banner h1, #banner p {
+	text-align: center;
+}
+#banner h1 {
+	padding: 20px 0 0 0;
+	letter-spacing: -6px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5em;
+}
+#banner p {
+	margin-top: -20px;
+	padding: 0 0 0 5px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	color: #696969;
+}
+#banner a {
+	text-decoration: none;
+	color: #40745E;
+	text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+/* #page including #content & #sidebar */
+#page {
+	display: table; /* Work with class .container */
+}
+
+/* Content */
+#content {
+	display: table-cell;
+	width: 819px;
+	border-right: 1px dotted #E0E1D6;
+	padding: 20px 20px 20px 0;
+	vertical-align: top;
+}
+#content .title {
+	margin: 0 0 30px 0;
+	padding: 0;
+	border-bottom: 3px solid #E0E1D6;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	color: #014708;
+}
+#content .entry {
+	padding: 0 0 20px 0;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+#content p.meta {
+	margin-left: 50%;
+	border-top: 1px dotted #E0E1D6;
+	padding: 0;
+	text-align: right;
+	font-size: .6em;
+}
+
+/* Sidebar */
+#sidebar {
+	display: table-cell;
+	width: 340px;
+	padding: 20px 0 20px 20px;
+	color: #787878;
+	vertical-align: top;
+}
+#sidebar h2 {
+	margin: 0 0 15px 0;
+	border-bottom: 3px solid #E0E1D6;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	font-size: 1em;
+	color: #014708;
+}
+#sidebar a {
+	border: none;
+}
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Bottom Three Columns */
+#three-columns {
+	padding: 30px 0;
+	border-top: 10px solid #E9EAE1;
+	background: #E5E6DD;
+}
+#three-columns-content {
+	display: table; /* Work with class .container */
+	color: #7D7764;
+	font-size: .9em;
+}
+/**************************************
+Create 3 components :
+<?php get_component('column-one'); ?>
+<?php get_component('column-two'); ?>
+<?php get_component('column-three'); ?>
+**************************************/
+#column1, #column2, #column3 {
+	display: table-cell;
+	width: 33%;
+}
+#column1 {
+	padding: 0 20px 0 0;
+}
+#column2 {
+	padding: 0 20px;
+}
+#column3 {
+	padding: 0 0 0 20px;
+}
+#three-columns-content h2 {
+	margin: 0 0 10px 0;
+	border-bottom: 3px solid #E0E1D6;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	color: #373737;
+}
+
+/* Footer */
+#footer {
+	padding: 20px 0;
+	height: 30px;
+	border-top: 5px solid #f0f2e8;
+	font-size: .7em;
+	background: #E9EAE1;
+}
+#foot {
+	display: table; /* Work with class .container */
+}
+#foot div.left, #foot div.right {
+	display: table-cell;
+}
+#foot div.right {
+	text-align: right;
+}
+#foot {
+	text-shadow: 1px 1px 0 #FFFFFF;
+	color: #7D7764;
+}
+#foot a {
+	text-decoration: underline;
+	color: #7D7764;
+}
+#foot a:hover {
+	text-decoration: none;
+	color: #7D7764;
+}
+
+
+

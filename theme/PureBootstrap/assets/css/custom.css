@@ -1,0 +1,99 @@
+/******************************************************
+*
+* @File: 			custom.css
+* @Package:		GetSimple                                
+* @Action:		PureBootstrap theme for GetSimple CMS    
+* @Author:    John Stray [https://www.johnstray.id.au/]
+*
+******************************************************/
+
+/* Place you Custom CSS classes in this file */
+
+/** 
+   When navbar is fixed to top, the padding on the body needs increasing to the
+   size of the navbar to compensate. Also, force scrollbars to prevent
+   realignment when switching between short and long pages
+**/
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/**
+   The padding above the page heading makes the page not line-up correctly with
+   the sidebars, and looks excessive anyway, so it will be removed here.
+**/
+   
+.page-header {
+  margin-top: 0 !important;
+}
+
+/**
+   The caret on dropdown menus sits too close to the menu text. Lets move it
+   over by 6px.
+**/
+   
+.dropdown-toggle .caret {
+  margin-left: 6px;
+}
+
+/**
+   Use the FontAwesome font and css to add icons to menu items to make them look
+   cool. Add your custom menu icons here. Each menu item has a class of its
+   slug. The icon should be applied based on the example Home (index) below.
+   Preview the icons at: http://fortawesome.github.io/Font-Awesome/icons/
+**/
+
+/* Home Page (index) */
+ul.nav > li.index > a:before {
+  font-family: FontAwesome;
+  content: "\f015";
+  padding-right: 6px;
+}
+
+/* NewsFeed (feed) */
+ul.nav > li.feed > a:before {
+  font-family: FontAwesome;
+  content: "\f044";
+  padding-right: 6px;
+}
+
+/* Portfolio (portfolio) */
+ul.nav > li.portfolio > a:before {
+  font-family: FontAwesome;
+  content: "\f030";
+  padding-right: 6px;
+}
+
+/* Language Dropdown */
+ul.nav > li.lang > a:before {
+  font-family: FontAwesome;
+  content: "\f1ab";
+  padding-right: 6px;
+}
+
+ul.nav > li.lang ul li a:before {
+  content: "";
+  padding: 0;
+}
+
+ul.nav > li.lang ul li a img {
+  vertical-align: middle;
+  padding-right: 6px;
+}
+
+/**
+   Add a subtle shadow to the navibar to make your page look that little better
+**/
+
+div.navbar, ul.dropdown-menu {
+     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.4) !important;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.4) !important;
+          box-shadow: 0px 0px 5px rgba(0,0,0,0.4) !important;
+}

@@ -1,0 +1,291 @@
+<?php
+//set internationalization translate to english
+
+
+
+
+
+	$i18n = array (
+        "NEWS" => 'Pages & Comments',
+		"MSG_CAPTCHA_FAILED" => 'Captcha failed, please try again.',
+		"WHO" => 'Από',
+        "MSG_pcSUC" => 'Ευχαριστώ για την απάντηση/σχόλιο.',
+		"MSG_pcERR" => 'Παρουσιάστηκε σφάλμα κατά την αποστολή του κειμένου.',
+        "pc_FORM_SUB" => 'Form Submission',
+        "cmm" => 'Απάντηση-Σχόλια',
+        "news" => 'Γράψτε μια νέα απάντηση/σχόλιο',
+        "acpt" => 'Αποδοχή',
+        "canc" => 'Ακύρωση',
+        "readm" => 'Διάβασε Περισσότερα',
+        "pubd" => 'Δημοσιευτηκε ',
+        "pubb" => 'Δημοσιευτηκε από',
+        "YES" => 'ΝΑΙ',
+        "NO" => 'ΟΧΙ',
+        "BACK" => 'Πίσω',
+        "Save" => 'Αποθήκευση',
+        "Add" => 'Προσθήκη', 
+        "filter" => 'Φίλτρο',
+        "notfile" => 'Unable to load the comment form and comments because there is no file pc_manager.xml.',
+        "pc_home" => 'Αρχική',
+        "pc_del" => 'Διαγραφή',
+        "pc_delcom" => 'Delete comments?',
+        "pc_delcommain" => 'If you want remove this comment contact with admin of web,\nbecause has asocciated comments.', 
+        "pc_newcom" => 'Νέο σχόλιο',
+        "pc_on" => 'on',
+        "pc_expand" => 'Expand thread', 
+        "pc_collapse" => 'Collapse thread',
+        "pc_notfilehlp" => 'Sorry, this file does not exist.', 
+        "pc_lastcom" => 'Πρόσφατα σχόλια',//////////////////
+        "pc_notcomment" => 'Δεν υπάρχουν σχόλια.',//////////////////
+        "pc_answ" => 'Answer',//--------------
+        "pc_ratingup" => 'Μου αρέσει αυτή η απάντηση (like).',//--------------
+        "pc_ratingdown" => 'Δεν μου αρέσει αυτή η απάντηση.',//--------------
+        "pc_resend" => 'Please, you forward again the comment.',//----ENGLISH
+
+        //Settings
+        "pc_NCMNG" => 'Διαχειρίστης σελίδων και σχολίων',
+        "pc_NEWS" => 'Σελίδες με σχόλια',
+        "pc_mng" => 'Add comments to Pages',
+        "pc_hlp" => 'Help',
+        "pc_fl" => 'File Name',
+        "pc_pg" => 'Σελίδα',
+        "pc_pgttl" => 'Τίτλος Σελίδας',
+        "pc_is" => 'News(Y/N)',
+        "pc_add" => 'Προσθήκη δυνατότητας σχολίου στην σελίδα',
+        "pc_del" => 'Delete system comments of page',
+        "pc_com" => 'Commts.',
+        "pc_comc" => 'Σχόλια',
+        "pc_vcom" => 'Δες Σχόλια',
+        "pc_edopt" => 'Edit Options',
+        "pc_grp" => 'Group Options',
+        "pc_fadd" => 'First, add it',
+        "pc_aedt" => 'Then, edit',
+        "pc_bckup" => 'Backups',
+        "pc_view" => 'view',
+        "pc_viewpage" => 'Δες σελίδα', 
+        "pc_modcom" => 'Το σχόλιο αυτό δεν θα δημοσιοποιηθεί μέχρι να ελεγθεί',
+        "pc_unpub" => 'Unpublish this comment.',
+        "pc_ocult" => 'Κρύψε',
+        "pc_admin" => 'από τους διαχειριστές.',
+        "pc_cred" => 'Credits',
+        "pc_tpord_cm" => 'Type of order of comments',
+        "pc_ord_ls" => 'Nº order in list of pages for this group',
+        "pc_sett" => 'Ρυθμίσεις',
+        "pc_settl" => 'Γενικές ρυθμίσεις',
+        "pc_lang" => 'Γλώσσα :',
+        "pc_ffpost" => 'Comments date format',
+        "pc_ffnews" => 'News date format',
+        "pc_social" => 'Social share',
+        "pc_phpmailer" => 'Use class phpmailer.', 
+        "pc_notifmail" => 'Receive notification by email', 
+        "pc_mailst" => 'Use standar function.', 
+        "pc_nonotifmail" => 'Do not receive notification by email.', 
+        "pc_free1" => 'Free 1',
+        "pc_free2" => 'Free 2',
+        "pc_default" => 'default values for comments', 
+        "pc_hide" => 'hide', 
+        "pc_autmgrp" => 'Automatic group', 
+        "pc_q_autmgrp" => 'the page will be automatically added to a group if in <b>Tags of page of admin</b> has a tag like: _pcgroup:yougroup.', 
+        "pc_comments_rct" => 'Number of comments for "Recents Comments"',
+		"pc_integrate" => 'To integrate in blog\'s plugin', //-------------
+		"pc_integrNM" => 'To integrate in NEWS MANAGER', //--------
+		"pc_integrNM_pg" => 'Page that displays posts of News manager', //-----------
+		"pc_postsNM" => 'Posts of News manager', //-----------
+		"pc_integrGS" => 'To integrate in GS BLOG', //----------
+		"pc_integrGS_pg" => 'Page that displays posts of GS BLOG', //-------
+		"pc_postsGS" => 'Posts of GS BLOG', //-----------
+		"pc_posts" => 'Posts', //---------------
+		"pc_publish" => 'To publish comments', //---------
+		"pc_allowrep" => 'To allow replies', //--------
+		"pc_replies_hd" => 'Replies are hidden by default', //--------------------
+		"pc_numword" => 'Maximum number of characters for comment (value 0 no limit)', //--------
+		"pc_numword_dp" => 'Maximum number of characters for comment', //--------
+		"pc_blackls" => 'Black list of words', //--------
+		"pc_blackls_w" => 'Black list of words (separated by commas)', //--------
+		"pc_rating" => 'Support comments ratings', //--------
+		"pc_rating_tp" => 'Type of ratings', //--------
+		"pc_socialmed" => 'To integrate with social media', //--------
+		"pc_socialmed_tp" => 'Type of social media', //--------
+		"pc_inappro" => 'Report inappropriate comments', //--------
+		"pc_inappro_tp" => 'Type of label for inappropriate comments', //--------
+		"pc_notify_upd" => 'Notify of update of comment',  //---------
+		"pc_vote" => 'Rating', //------------
+		"pc_emptyemail" => 'Field email is empty, please enter a valid email address.', //------------
+
+	//add pages
+        "pc_pagsav" => 'Comments section has been added.',   
+        "pc_pagyasav" => 'A comments section has already been added. It is not necessary to add another!',
+        "pc_addpagcomm" => 'Select "Add" to add a comments system into a page that already exists.',
+
+	//del pages
+        "pc_delsure" => 'Are you sure?',
+    	"pc_delpag" => 'Do you wish to delete the comments section from this webpage?',
+        "pc_delfil" => 'Do you wish to delete this comments file from your website?',
+    	"pc_delyapag" => 'Removed comments section from this webpage!',
+        "pc_delyafil" => 'Comments file deleted from server!',
+        "pc_delext" => 'There is not comments file to delete as no one has left a comment!',
+     	"pc_ndelpag" => 'I did not delete the comments section from this webpage.',
+        "pc_ndelfil" => 'I did not delete comments file from your website.',
+
+	//edit pages
+        "pc_edt" => 'Editing',
+        "pc_emot" => 'Emot.',
+        "pc_emotic" => 'Emoticons',
+        "pc_cpt" => 'Captcha',
+        "pc_ncomm" => 'Σχόλια ανά σελίδα',
+        "pc_ncommc" => 'No. Comments by page',
+        "pc_ord" => 'Order',
+        "pc_nord" => 'Number of Order',
+        "pc_nword" => 'Αριθμός χαρακτήρων',
+        "pc_q_nword" => 'number of characters that will be showed in list of pages or blog',
+        "pc_nwordc" => 'No. characters',
+        "pc_group" => 'Group',
+        "pc_moder" => 'Moder.',
+        "pc_cmoder" => 'Moderated comments',
+        "pc_img" => 'IMG.',
+        "pc_ruta" => 'Image',
+        "pc_q_ruta" => 'to put where is image, for example: images/yourimage.jpg',
+        "pc_user" => 'Χρήστης',
+        "pc_wuser" => 'Works with FrontEnd user plugin',
+        "pc_wruser" => 'Work with user',
+        "pc_userdel" => 'Permit to user that delete main comment although had replies',
+        "pc_ctgr" => 'Category', 
+        "pc_vctgr" => 'View category entries', 
+        "pc_velegctgr" => 'You can choose a category or write one new.', ///////
+        "pc_delreg" => 'Entry deleted!',
+		"pc_chsav" => 'Αλλαγές αποθηκεύτηκαν.',
+		"pc_notchsav" => 'Unsaved changes. There is already an entry for that group.',
+        "dcrs" => '(Φθίνουσα)',
+        "icrs" => '(Αύξουσα)',
+        "pc_more" => 'more',
+		"pc_tag" => 'Tags',
+		"pc_q_tag" => 'διαχωρίστε τα tag με κόμμα.',
+		"pc_titletoform" => 'Title to form',
+
+	//group
+        "gp_addgrp" => 'Add group',
+        "gp_edtgrp" => 'Edit group',
+        "gp_delgrp" => 'Delete group',
+        "gp_viegrp" => 'View groups',
+        "gp_grp" => 'Group',
+        "gp_q_grp" => 'group: name, number, name+number,... it is used for the function ls_pagesblg()',
+        "gp_c_grp" => 'Caption',
+        "gp_qc_grp" => 'will be used at first of list of news.',
+        "gp_n_grp" => 'No. pages in list',
+        "gp_d_grp" => 'Order D(descending) or A(ascending)',
+        "gp_o_grp" => 'Order by',
+        "gp_o1_grp" => 'According to order of entry in system comments',
+        "gp_o2_grp" => 'According to date of publication of pages',
+        "gp_o3_grp" => 'According to field number of order in system comments',
+        "gp_st_grp" => 'Style',
+        "gp_stl_grp" => 'Group style',
+        "gp_stl1_grp" => 'Blog style',
+        "gp_stl2_grp" => 'News style',
+        "gp_pagsav" => 'Group saved.',
+        "gp_pagyasav" => 'Group already saved, only you can to edit it.',
+        "gp_grpedt" => 'Group edited.',
+        "gp_nonews" => 'Do not exist Pages for the group: ', 
+        "gp_pagbygrp" => 'Pages inside group: ', 
+        "gp_tmplt_grp" => 'Template of group: ', 
+
+        //backup
+        "backup" => 'Backups',
+        "backup_c" => 'Create Backup',
+        "backup_cd" => 'Copy created',
+        "ndel" => 'Remove this entry?',
+        "ndelc" => 'Remove register number ',
+        "ndelf" => 'Remove this log',
+        "ndelfc" => 'Remove log ',
+        "rec_log" => 'Recover log?',
+        "recpd_log" => 'Log Recovered!',
+        "deltd_log" => 'Log deleted!',
+        "listbackup" => 'List of Backups',
+        "delsure" => 'Are you sure?',
+
+        //users
+        "wrtusr" => 'Για να αφήσετε σχόλιο πρέπει να <b><i>συνδεθείτε</i></b> ή ',
+        "nc_rgs" => 'να εγγραφείτε.',
+        "nc_rgsr" => 'Εγγραφή',
+        "nc_auth" => 'Συγγραφέας:',
+
+        //Form
+		"Nb" => 'Όνομα Μαθητή',
+    	"Em" => 'Email',
+		"Cm" => 'Απάντηση-Σχόλιο',
+        "Ms" => 'Μήνυμα',
+ 		"Ev" => 'Αποστολή',
+        "Ps" => 'στάλθηκε στις',
+        "Rf" => 'Υποχρεωτικό πεδίο',
+        "Co" => 'Υποχρεωτικό πεδίο.',
+		"Code" => 'Δώσατε αυτόν τον κώδικα:',
+		"Cap" => 'Ο σωστός κώδικας ήταν:',
+        "Cpt" => 'Write Verification Code',
+        "Sub" => 'Θέμα',
+        "Ct" => 'Τοποθεσία',
+        "mf" => 'Απάντηση',
+        "sh_pg" => 'Σελίδες',
+        "ad_pg" => 'Προσθήκη',
+        "em_text" => '(will never be shown)',
+        "rl" => 'If you cann\'t see Verification Code clearly.',
+		"reload" => 'Reload',
+		"code"  =>'Captcha',
+		"red" => '*',
+		"Prever"  =>'Προηγ.',
+		"Nexter"  =>'Επόμ.',
+		"Razdel"  =>'',
+		"bkt"  =>')',
+		"bkti"  =>'',
+		"otvet"  =>'Reply:',
+		"hh"  =>'Comment',
+		"back"  =>'Πίσω',
+		"text"  =>'',
+        "moder" => 'Δημόσιο',
+        "redir" => 'Redirection in ',
+        "redir1" => ' seconds. If you are not redirected push ',
+        "nombre" => 'Όνομα',
+        "city" => 'Πόλη',
+        "subject" => 'Θέμα',
+        "email" => 'Email',
+        "comentario" => 'Σχόλιο',
+        "errphpmail" => 'Folder PHPMailer_v5.1 does not exist inside folder PLUGINS or file class.phpmailer.php is missing.', //english
+        "MSG_charERR" => 'Error: Number of characters exceeds the limit.',  //---------------
+        "pc_bold" => 'Bold',
+        "pc_italic" => 'Italic',
+        "pc_underline" => 'Underline',
+        "pc_link" => 'Insert Link',
+        "pc_img" => 'Image',
+        "pc_color" => 'Change Colour',
+        "pc_black" => 'Black',
+        "pc_red" => 'Red',
+        "pc_yellow" => 'Yellow',
+        "pc_pink" => 'Pink',
+        "pc_green" => 'Green',
+        "pc_orange" => 'Orange',
+        "pc_purple" => 'Purple',
+        "pc_blue" => 'Blue',
+        "pc_beige" => 'Beige',
+        "pc_brown" => 'Brown',
+        "pc_teal" => 'Teal',
+        "pc_navy" => 'Navy',
+        "pc_maroon" => 'Maroon',
+        "pc_limegreen" => 'Limegreen',
+        "pc_white" => 'White',///////////////////
+        "pc_url" => 'Εισάγετε URL:',///////////////////
+        "pc_urlbbc" => 'Κέιμενο ή σύνδεσμος;:',///////////////////
+        "pc_urlbbc_n" => 'URL will not be to insert.', ///////////////////
+		"pc_reply" => 'Γράψτε μια απάντηση',
+
+		//pagination
+		"Pag"  =>'Σελίδες',
+        "nextp" => 'Επόμενη',
+        "prevp" => 'Προηγούμενη',
+		"prev_page"  =>'Προηγ.',
+		"next_page"  =>'Επομ.',
+		"Prev"  =>'<<',
+		"Next"  =>'>>',
+		"pc_firstpage" => 'Πρώτη σελίδα', ////////////////////--------------
+		"pc_lastpage" => 'Τελευταία Σελίδα', ////////////////////--------------
+		"pc_separate" => '...'
+);
+
+?>

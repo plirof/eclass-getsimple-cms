@@ -1,0 +1,12 @@
+Terra Firma theme 
+Ported to GetSimple CMS by Mark Moore, http://n‌wlinux.com
+
+v0.3 - 20Nov11
+1. added page title to top of div entry
+2. removed 25px div entry padding  
+3. increased main body font size from 12 to 14px
+4. changed font from Trebuchet MS to Arial
+
+v.0.2 - 16Nov11
+1. added get_header function for I18n compatibility
+2. removed unnecessary comment at top of template.php

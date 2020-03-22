@@ -1,0 +1,13 @@
+ /* red  dark = #b30000 next=#f44 middle = #e60000  light = #ffe6e6  */ 
+#paginator a{background-color:#f44;color:#830000;}
+#paginator a:hover{background-color:#e60000;color:white;}
+#paginator a.activ{background-color:#b30000;color:white;}
+#paginator a.prev, #paginator a.next{background-color:transparent;color:#b30000;}
+.gblist .number {background-color:#b30000;color :white;}
+.gblist .entry{background-color:#ffe6e6;color:black;}
+.gblist .data,.responselink a  {color:#b30000;} 
+.gbform .captchainput {background-color:#ffe6e6;}
+.gbform fieldset legend {background-color:#b30000;color:white;}
+.gbform fieldset label b,.gbform .rf b{color:#b30000;}
+.gbform .captchaimg {background-color:#ffe6e6; border:1px none #b30000;}
+#msgerr {color:#b30000;} 

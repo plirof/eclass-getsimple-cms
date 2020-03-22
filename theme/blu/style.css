@@ -1,0 +1,38 @@
+body {background-color: #f2f2f0; margin: 0; padding: 0; font-family: verdana; font-size: 12px;}
+
+div {font: verdana 12px #000; position:relative;}
+a {text-decoration: none;}
+
+#tlo {background: url(images/background.jpg); margin:0 auto; padding:0; width:750px; height:100%; clear: both;}
+#kontener {margin:0 auto; padding:0; width:702px; height:100%; clear:both; overflow:hidden;}
+
+#naglowek {background: url(images/logo.jpg) no-repeat; width:702px; height:181px; margin-bottom:0px;}
+#naglowek h1 {margin-top:0px; padding-top:120px; padding-left:70px;	color:#f6f6f6; font-size:22px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+#menu {background: #fff url(images/pasek.jpg) no-repeat; width:auto; height:33px; margin-bottom:0px; width:702px; overflow:hidden;}
+#menu ul {list-style: none; margin:0; padding:0; font-family:Tahoma;}
+#menu li {float: left; padding:5px 10px 0 10px; font-size: 12px;}
+#menu a {display: block; line-height: 20px;	padding: 0 8px;	color: #fff; font-weight:bold;}
+#menu a:hover {background: #fff; color: #294b9d;}
+
+#lewy {background: url(images/tlo1.jpg) repeat; width:160px; height:100%; float:left; padding-left:0px; margin:3px 0 0 4px;}
+
+#lewy h3 { padding:9px 0 0 0; margin:0 auto; font-size: 12px; color: #000;	background:url(images/menu.jpg) no-repeat; font-weight:bold; font-family:Tahoma; height:23px; width:157px; text-align:center;}
+#lewy ul { list-style:none; margin:4px 6px 0 10px; padding:0;}
+#lewy ul li { margin:5px 0; padding:0;}
+#lewy ul li a {background: url(images/ptk.jpg) no-repeat 0 5px; font-size:14px; padding:3px 4px 3px 22px; color: #000000;}
+#lewy ul li a:hover {text-decoration:underline;}
+#bottom {background: url(images/bottom.jpg) no-repeat; width:160px;	height:8px;	margin-top:20px; margin:4px 0 0 0; padding:0; overflow:hidden;}
+
+#srodek {width:500px; height:auto; float:left; margin-left:18px; margin-bottom:20px;}
+#srodek a {	color:#000000; text-decoration:underline;}
+
+#srodek h2 {padding:10px 15px; font-family:Tahoma; background-color:#FFFFFF; font-size: 14px; color: #294b9d; margin:0px;}
+#srodek p {margin:0px; text-indent: 15px; text-align: justify; font-size:12px; padding:8px;	font-family:Verdana; background:#f7f7f7; border-left:solid 1px #e6e6e6; border-right:solid 1px #e6e6e6; line-height:18px;}
+
+#stopka {background: url(images/pasek.jpg) no-repeat; clear:both; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; height:25px; color:#e6e6e6; padding-top:8px; padding-right:20px;}
+#stopka a {	color: #e6e6e6;}
+#stopka a:hover {text-decoration:underline;}
+
+#copyright {float:left;	padding-left:280px;}
+#design {float:right; font-size:9px;}

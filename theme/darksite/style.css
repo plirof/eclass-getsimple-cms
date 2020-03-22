@@ -1,0 +1,40 @@
+body {background:url(images/bg.jpg) repeat-x #212121; margin:0 auto; font-family:Tahoma; font-size:12px;}
+
+a {text-decoration: none;}
+img {border:0px;}
+
+#logo {background:url(images/top.jpg) top left no-repeat; height:142px;	width:960px; margin:auto;}
+#logo h1 {color:#FFFFFF; margin:0; padding-top:60px; padding-left:90px;	font-size:24px;}
+
+#kontener {background:#FFFFFF; margin:0 auto; width:960px; padding:7px;	height:auto; overflow: hidden;}
+
+ul#menu1 {background:#323232; width:960px; height:21px;	text-align:right; color:#CCCCCC; float:right; font-size:11px; margin:0px; padding:8px 0 0 0; list-style:none;}
+ul#menu1 li { padding:0 7px; font-size:11px; display:inline; border-right:solid 1px #666666;}
+ul#menu1 li a {color:#CCCCCC;}
+ul#menu1 li a:hover {text-decoration:underline;}
+
+ul#menu2 {background: #b80000; clear:both; width:958px; height:31px; margin:0px; border:solid 1px #b80000; padding:0; list-style:none;}
+ul#menu2 li {float: left; padding:0 15px;	padding-top:5px; font-size: 11px; color:#CCCCCC;}
+ul#menu2 a {display: block;	line-height: 21px; padding: 0 10px;	color:#FFFFFF; font-weight: bold;}
+ul#menu2 a:hover {background:#e10000; color: #FFFFFF;}
+ul#menu2 li.current a {background:#e10000; color: #FFFFFF;}
+
+.menup {margin:10px 5px 15px 0; float:right; height:auto; width:220px;}
+.menup h3 {background:url(images/tlo_menu.jpg);	color:#f1f1f1; width:220px;	height:25px; font-size:12px; font-weight:bold; text-align:center; padding-top:10px;	margin-bottom:0px;}
+.menup ul {list-style: none; margin: 0;	padding: 0;}
+.menup li {	background:#fbfbfb;	width:218px; height:22px; margin-top:1px; margin-left:px; border:solid 1px #eff0f0; text-align:center; padding-top:8px;}
+.menup li a{font-size:12px;	color:#434343;}
+.menup li a:hover{color:#555555; font-weight:bold;}
+
+.tresc {margin:0 0 0 15px; padding-bottom:15px; float:left; height:auto; width:700px;}
+.tresc h2 {margin:26px 0 0 0; padding-bottom:4px; color:#890000; font-size:16px; font-family:Verdana;}
+.tresc span {margin:0 0 14px 0;	color:#aaaaaa; display:block; font-size:10px; padding-top:0px; padding-bottom:5px; border-bottom:solid 1px #f1f1f1;	}
+.tresc img {float:left;	margin:0 10px 15px 0;}
+.tresc p {padding-left:0px; text-indent:0px; font-size:12px; font-family:Verdana; color:#000000; line-height:18px;}
+.tresc a {color:#cb182c; font-weight:bold;}
+.tresc a:hover {text-decoration:underline;}
+
+#stopka {background:url(images/tlo_stopka.jpg);	width:974px; height:26px; margin:0 auto;}
+#copyright {text-align:right; margin-right:15px; padding-top:8px; color:#b8b8b8; font-size:9px;}
+#copyright a {color:#b8b8b8; text-decoration:none;}
+#copyright a:hover {color:#b8b8b8; text-decoration:underline;}

@@ -1,0 +1,331 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Modified for Concrete5 by Jordan Lev - http://jordanlev.com */
+/* Modified for GetSimple by Mark Moore - http://nwlinux.com 15Nov11 */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(bg/bg01.jpg);
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+p, ol, ul, dl {
+	margin-top: 0;
+}
+
+img.pad {padding:5px}
+a img {border: 0; padding:5px;}
+
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	margin: 0 auto;
+}
+
+img.alignleft {
+	margin: 0 27px 0 0;
+}
+
+img.alignright {
+	margin: 0 0 0 27px;
+}
+
+img.border {
+	padding: 4px;
+	border: 1px solid #E9E4D8;
+}
+
+/* Wrapper */
+
+#wrapper {
+	background: url(bg/bg02.jpg) repeat-x;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Header */
+
+#header {
+	height: 211px;
+	background: url(bg/bg04.jpg);
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 308px;
+	height: 211px;
+}
+
+#logo h1, #logo p {
+	line-height: 1;
+}
+
+#logo h1 {
+	padding: 137px 0 0 50px;
+	letter-spacing: -2px;
+	/* customize_header_logo */ font: normal normal normal 34px "Trebuchet MS",Arial,Helvetica,sans-serif; /* customize_header_logo */
+	/* customize_header_logo */ color: #FFFFFF; /* customize_header_logo */
+}
+
+#logo h1 sup {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#logo p {
+	padding: 0 0 0 50px;
+	font-size: 13px;
+	color: #F8AB80;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+#logo a:hover {
+	text-decoration: underline;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+}
+
+#logo p a {
+	color: #F8AB80;
+}
+
+/* Banner */
+
+#banner {
+	float: left;
+	height: 118px; /*118px*/
+	padding: 93px 0 0 0;
+}
+
+#banner img {
+	width: 667px;
+	height: 118px;
+}
+
+/* Menu */
+
+#menu {
+	height: 76px;
+	background: url(bg/bg04.jpg) no-repeat 0 -211px;
+}
+
+#menu ul {
+	height: 67px;
+	margin: 0 25px;
+	padding: 9px 0 0 14px;
+	background: url(bg/bg05.jpg);
+	list-style: none;
+	line-height: 1
+}
+
+#menu li {
+	float: left;
+	height: 35px;
+	padding: 15px 20px 0 20px;
+}
+
+#menu li.nav-selected {
+	background: url(bg/bg06.jpg) no-repeat;
+}
+
+#menu a {
+	text-decoration: none;
+	letter-spacing: -1px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/* Top Bar */
+
+#top-bar {
+	background: url(bg/bg04.jpg) no-repeat 0 -287px;
+}
+
+/* Page */
+
+#page {
+	background: url(bg/bg03.jpg) repeat-y;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 655px;
+	padding-left: 25px;
+	background: url(bg/bg04.jpg) no-repeat 0 -335px;
+}
+
+#content.right {
+	float: right;
+	width: 660px;
+	padding-left: 0;
+	padding-right: 40px;
+	background: url(bg/bg04.jpg) no-repeat 100% -335px;
+}
+
+#content.full {
+	float: left;
+	width: 950px;
+	padding-left: 25px;
+	background: url(bg/bg04.jpg) no-repeat 0 -335px;
+}
+
+#content div.entry {
+	margin: 0 25px;
+	padding-top: 0px;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+	border-bottom: 1px solid #E5E1D8;
+	line-height: normal;
+	color: #5A5544;
+}
+#content h1 {
+	font-size: 40px;
+}
+#content h2 {
+	font-size: 32px;
+}
+
+#content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
+	text-decoration: none;
+	color: #5A5544;
+}
+
+#content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
+	text-decoration: underline;
+}
+
+
+
+	
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 266px;
+	padding: 24px 50px 0 0;
+	background: url(bg/bg04.jpg) no-repeat 100% -335px;
+}
+
+#sidebar.left {
+	float: left;
+	width: 266px;
+	padding: 24px 0 0 50px;
+	background: url(bg/bg04.jpg) no-repeat 0 -335px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0 0 0 25px;
+	list-style: none;
+	line-height: normal;
+	border-left: 1px solid #E5E1D8;
+}
+
+#sidebar.left ul {
+	padding: 0 25px 0 0;
+	border-left: none;
+	border-right: 1px solid #E5E1D8;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding: 0;
+	line-height: 3.5;
+	border: none;
+}
+
+#sidebar li li {
+}
+
+#sidebar h2 {
+	margin: 0 0 20px 0;
+	padding: 20px 0 5px 0;
+	border-bottom: 1px solid #E5E1D8;
+}
+
+/* 2 Columns */
+
+.two-cols {
+	margin: 0 25px;
+	padding: 35px 35px 0 35px;
+	background: #28241E url(bg/bg09.jpg) repeat-x;
+	color: #736F6A;
+}
+
+.two-cols .col1 {
+	float: left;
+	width: 595px;
+}
+
+.two-cols .col2 {
+	float: right;
+	width: 210px;
+	padding: 0 0 0 25px;
+	border-left: 1px solid #423C31;
+}
+
+.two-cols h2 {
+	font-size: 26px;
+	color: #FFFFFF;
+}
+
+.two-cols a {
+	color: #736F6A;
+}
+
+/* Footer */
+
+#footer {
+	background: url(bg/bg10.jpg) no-repeat;
+	padding: 55px 0;
+}
+
+#footer p {
+	text-align: center;
+	color: #8F8B83;
+}
+
+#footer a {
+	color: #8F8B83;
+}
+
+/* customize_miscellaneous */ /* customize_miscellaneous */

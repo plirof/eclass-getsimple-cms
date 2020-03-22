@@ -1,0 +1,6 @@
+/* Import the custom.css StyleSheet */
+@import url("./assets/css/custom.css");
+
+/* Bootstrap Core CSS */
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");

@@ -1,0 +1,194 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+#logo {margin-top: 36px;}
+
+#logo a {
+	color: #CC3333;
+	font-size: 32px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	
+}
+
+nav {
+	margin-top: 38px;
+	
+}
+
+nav ul {
+	text-align: center;
+	float: right;
+	border-top: 1px solid #A3A3A3;
+	border-bottom: 1px solid #A3A3A3;
+	padding: 0 10px;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	color: inherit;
+	font-size: 20px;
+	display: block;	/* IE6, IE7 line height fix */
+	text-decoration:none;
+	padding: 12px 10px 2px;
+}
+
+nav li a:hover, nav li a:focus {
+	color:#CC3333;
+	text-decoration:none;
+}
+
+nav li.current a  {
+	color:#CC3333;
+	text-decoration:none;
+}
+
+#tagline h3 {
+	text-align: center;
+}
+
+footer {
+	height: 90px;
+	width: 100%;
+	background-color: black;
+}
+
+footer .container  {
+	
+}
+
+footer .container p, footer .container a {
+	text-align: center;
+	color: white;
+	margin-top: 35px;
+}
+
+/* #Homepage Styles
+================================================== */
+
+.extract {
+	height: 110px;
+	overflow: hidden;
+}
+
+.group4 {
+	border-top: 1px solid #A3A3A3;
+	padding-top: 20px;
+	-moz-column-count: 3; /* Firefox */
+	-webkit-column-count: 3; /* Safari and Chrome */
+	column-count: 3;	
+	-moz-column-gap: 40px; /* Firefox */
+	-webkit-column-gap: 40px; /* Safari and Chrome */
+	column-gap: 40px;	
+	-moz-column-rule: 1px solid #A3A3A3; /* Firefox */
+	-webkit-column-rule: 1px solid #A3A3A3; /* Safari and Chrome */
+	column-rule: 1px solid #A3A3A3;
+}
+
+a.photo {
+	position: relative;
+	float: left;
+	margin: 16px 13px 8px 0;
+	padding: 8px;
+    background-color: white;
+	border: 1px solid #D6D6D6;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {footer .container p, footer .container a {
+	margin-top: 15px;
+}}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {.group4 {
+	border-top: 1px solid #A3A3A3;
+	padding-top: 20px;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+	column-count: 2;	
+	-moz-column-gap: 40px; /* Firefox */
+	-webkit-column-gap: 40px; /* Safari and Chrome */
+	column-gap: 40px;	
+	-moz-column-rule: 1px solid #A3A3A3; /* Firefox */
+	-webkit-column-rule: 1px solid #A3A3A3; /* Safari and Chrome */
+	column-rule: 1px solid #A3A3A3;
+}}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {.group4 {
+	border-top: 1px solid #A3A3A3;
+	padding-top: 20px;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+	column-count: 2;	
+	-moz-column-gap: 40px; /* Firefox */
+	-webkit-column-gap: 40px; /* Safari and Chrome */
+	column-gap: 40px;	
+	-moz-column-rule: 1px solid #A3A3A3; /* Firefox */
+	-webkit-column-rule: 1px solid #A3A3A3; /* Safari and Chrome */
+	column-rule: 1px solid #A3A3A3;
+}
+footer .container p, footer .container a {
+	margin: 10px 0;
+}}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {.group4 {
+	border-top: 1px solid #A3A3A3;
+	padding-top: 20px;
+	-moz-column-count: 1; /* Firefox */
+	-webkit-column-count: 1; /* Safari and Chrome */
+	column-count: 1;	
+	-moz-column-gap: 40px; /* Firefox */
+	-webkit-column-gap: 40px; /* Safari and Chrome */
+	column-gap: 40px;	
+	-moz-column-rule: 1px solid #A3A3A3; /* Firefox */
+	-webkit-column-rule: 1px solid #A3A3A3; /* Safari and Chrome */
+	column-rule: 1px solid #A3A3A3;
+}
+footer .container p, footer .container a {
+	margin: 10px 0;
+}}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

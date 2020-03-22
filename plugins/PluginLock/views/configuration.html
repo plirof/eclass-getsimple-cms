@@ -1,0 +1,46 @@
+<script>
+
+	function showMessage(message, type){
+        if (!type) type = 'error';
+        $('.error,.updated').remove();
+        $('div.bodycontent').before('<div class="'+type+'" style="display:block;">'+message+'</div>');
+        $('.error,.updated').delay(200).fadeOut(500).fadeIn(500);
+    }
+	
+	<?php if (isset($success)): ?>
+		showMessage('<?php echo $success ? i18n('PluginLock/CONF_SUCCESS') : i18n('PluginLock/CONF_ERROR') ?>', '<?php echo $success ? 'updated' : 'error'?>');	
+	<?php endif; ?>
+
+</script>
+
+<form id="configForm" method="post" action="load.php?id=PluginLock">
+
+    <div class="section">
+        <h3>Plugin Lock - <?php i18n('PluginLock/CONF_SETTINGS') ?></h3>
+
+		<div class="row">
+			<label for="usernames"><?php i18n('PluginLock/CONF_USERNAMES_LABEL') ?></label>
+			<p class="hint"><?php i18n('PluginLock/CONF_USERNAMES_HINT') ?></p>
+			<input id="usernames" name="usernames" type="text" value="<?php echo implode(',', $settings->usernames); ?>" />
+		</div>	
+
+		<div class="row">
+			<label class="inline" ><?php i18n('PluginLock/CONF_RULE') ?></label>
+			<select class="inline" name="rule">
+				<option <?php echo ($settings->rule == 'allow' ? 'selected="selected"' : ''); ?> value="allow"><?php i18n('PluginLock/CONF_RULE_ALLOW') ?></option>
+				<option <?php echo ($settings->rule == 'deny' ? 'selected="selected"' : ''); ?> value="deny"><?php i18n('PluginLock/CONF_RULE_DENY') ?></option>
+			</select>
+			<p class="hint"><?php i18n('PluginLock/CONF_QUERIES_HINT') ?></p>
+			<div class="queries">
+			</div>
+			<input type="hidden" name="queries"  value="<?php echo implode('||', $settings->queries); ?>" />
+			<button class="add" type="button" title="Add"><?php i18n('PluginLock/CONF_ADD') ?></button>
+		</div>
+		
+
+
+    </div>
+	
+	<input name="save" type="submit" class="submit" value="<?php i18n('PluginLock/CONF_SAVE') ?>" />
+
+</form>

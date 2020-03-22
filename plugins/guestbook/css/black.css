@@ -1,0 +1,13 @@
+/* black   dark = #000  next= #999 middle = #666 light = #ccc  */
+#paginator a {background-color:#999999;color:black;}
+#paginator a:hover{background-color:#666666;color:white;}
+#paginator a.activ{background-color:#000000;color:white;}
+#paginator a.prev, #paginator a.next{background-color:transparent;color:#999999;}
+.gblist .number {background-color:#000000;color:white;}
+.gblist .entry{background-color:#cccccc;color:black;}
+.gblist .data,.responselink a {color:#000000;} 
+.gbform .captchainput {background-color:#eeeeee;}
+.gbform fieldset legend {background-color:#666666;color:white;}
+.gbform fieldset label b,.gbform .rf b {color:#666666;}
+.gbform .captchaimg {background-color:#eeeeee; border:1px none #666666;}
+#msgerr {color:#666666;}  

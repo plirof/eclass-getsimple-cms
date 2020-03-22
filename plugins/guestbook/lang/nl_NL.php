@@ -1,0 +1,101 @@
+<?php
+//set internationalization
+
+
+	$i18n = array (
+
+        "GBOOK" =>  'Gastenboek',
+     	"MSG_CAPTCHA_FAILED" => 'Captcha Mislukt, Probeer het nog eens.',
+    	"WHO" => 'Van',
+        "MSG_guestSUC" => 'Bedankt voor je commentaar',
+	"MSG_guestERR" => 'Er ging iets fout tijdens het zenden van de pagina',
+	"MSG_charERR" => 'Error: het aantal characters is over het limiet',
+        "guest_FORM_SUB" => 'Guest Form Submission',
+	"Nb" => 'Naam',
+	"Em" => 'Email',
+	"Cm" => 'Commentaar',
+        "Ms" => 'Bericht',
+ 	"Ev" => 'Verzenden',
+        "Ps" => 'Geplaats op',
+        "Rf" => 'Verplichten velden',
+        "Co" => 'Verplichten velden zijn leeg.',
+	"Code" => 'U heeft de volgende code ingevuld',
+	"Cap" => 'De correcte code',
+        "Cpt" => 'Schrijf de tekst van het plaatje',
+        "Sub" => 'Onderwerp',
+        "Ct" => 'Locatie',
+        "ndel" => 'Verwijder de registratie',
+        "ndelc" => 'Verwijder registratie nº ',
+        "ndelf" => 'Verwijdert de log',
+        "ndelfc" => 'log verwijdert nº ',
+        "rec_log" => 'log herstellen',
+        "recpd_log" => 'log hersteld',
+        "deltd_log" => 'log verwijdert',
+        "mf" => 'Antwoorden',
+        "em_text" => '(Zal nooit getoond worden)',
+        "rl" => 'als je de Captcha niet duidelijk ziet druk op Herladen',
+	"reload" => 'Herladen',
+	"code"  =>'Captcha',
+	"*" => '*',
+	"Razdel"  =>'',
+	"bkt"  =>')',
+	"bkti"  =>'',
+	"Rep"  =>'Antwoorden:',
+	"hh"  =>'Commentaar',
+	"back"  =>'Terug',
+	"text"  =>'',
+        "redir" => 'doorsturen in ',
+        "redir1" => ' Seconde. als u nu word doorgestuurd druk op ',
+        "nextp" => 'Volgende',
+        "prevp" => 'Vorige',
+        "backup" => 'Backups',
+        "backup_c" => 'Maak Backup',
+        "backup_cd" => 'Kopie gemaakt',
+        "delsure" => 'Weet je het zeker?',
+        "nombre" => 'Naam',
+        "tema" => 'Onderwerp',
+        "email" => 'Email',
+        "city"=> 'Plaats',
+        "comentario" => 'Commentaar',
+
+		//Pagination
+		"Pag"  =>'Pagina’s: ',
+		"prev_page"  =>'Vorige',
+		"next_page"  =>'Volgende',
+		"Prev"  =>'<<',
+		"Next"  =>'>>',
+		"Prever"  =>'Vorige',
+		"Nexter"  =>'Volgende',
+		"Razdel"  =>'',
+		"firstpage" => 'First page', //english
+		"lastpage" => 'Last page', //english
+		"separate" => '...',
+
+		//bbcode
+        "bold" => 'Bold',
+        "italic" => 'Italic',
+        "underline" => 'Underline',
+        "link" => 'Insert Link',
+        "img" => 'Image',
+        "color" => 'Change Colour',
+        "black" => 'Black',
+        "red" => 'Red',
+        "yellow" => 'Yellow',
+        "pink" => 'Pink',
+        "green" => 'Green',
+        "orange" => 'Orange',
+        "purple" => 'Purple',
+        "blue" => 'Blue',
+        "beige" => 'Beige',
+        "brown" => 'Brown',
+        "teal" => 'Teal',
+        "navy" => 'Navy',
+        "maroon" => 'Maroon',
+        "limegreen" => 'Limegreen',
+        "white" => 'White',///////////////////
+        "url" => 'Insert URL:',///////////////////
+        "urlbbc" => 'Text of link?:',///////////////////
+        "urlbbc_n" => 'URL will not be to insert.' ///////////////////
+
+     );
+?>

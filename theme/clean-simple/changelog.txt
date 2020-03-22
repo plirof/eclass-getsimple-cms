@@ -1,0 +1,16 @@
+Changelog for GetSimple CMS theme Clean-Simple 
+Mark Moore | http://nwlinux.com
+
+16Nov11
+1. Removed unnecessary meta tags
+2. Added header PHP function 
+
+15Nov11
+1. Added php for tagline to header (template.php; line 29)
+2. Added php for sidebar (template.php; line 54)
+3. Change the right sidebar from h3 to h2 (template.php; line 85)
+4. Increases div class .post size to 15px (style.css)
+5. Changed div id footer to div id class (style.css)
+6. Updated /images/screenshot.png
+7. Updated style.css with correct authors and information
+

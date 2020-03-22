@@ -1,0 +1,28 @@
+==== INSTALL ====
+
+1. Upload the template folder to the "theme" directory of your Get-Simple CMS install. 
+2. Once uploaded log-in to the admin area and change your theme. Use the Theme tab.
+3. Once theme has been activated you can edit the sidebar component as needed. 
+Usually simply an un-ordered list <ul> and list-items <li>.
+4. Footer will automatically show copyright of current year, and website name. 
+Please keep footer links intact, per the license agreement. 
+
+==== HELP ====
+Need help with GetSimple? Check out the Get-Simple community at http://get-simple.info.
+There you can download the latest version and check out more themes, plugins, and ask questions in the forums.
+
+==== NOTE ====
+Note: This theme is based on the static HTML/CSS template by FreeCSSTemplates.org, 
+it was adapted by Simplified Solutions (get-simplified.com) to work with the Get-Simple Content Management System. 
+SS is not affiliated with FreeCSSTemplates or GetSimple CMS. This theme retains the original licensing provided by FCT.
+
+==== DONATE ====
+* If you enjoy this theme please consider making a financial contribution directly to the original author:
+  - http://www.freecsstemplates.org/license/
+
+* If you enjoy using the GetSimple CMS please consider making a financial contribution directly to the project:
+  - http://get-simple.info/contribute/
+
+* SS does not collect financial contributions for the adaptation of this design. 
+  - However, we encourage others to help adapt other CC (Creative Commons) Licensed designs for GetSimple.
+  - If you would like to contact SS please visit our site www.get-simplified.com.

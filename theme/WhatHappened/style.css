@@ -1,0 +1,181 @@
+/*
+Theme Name: WhatHappened
+Theme URI: http://nwlinux.com
+Description: A simple 2-column theme with integrated Facebook and Twitter share buttons
+Author: Mark Moore
+Author URI: http://nwlinux.com
+*/
+
+/* -- Color: Red - #c94c4c -- */
+
+/* -------------------- */
+/* -- General Styles -- */
+/* -------------------- */
+#wrap { width: 920px; margin: 0 auto; }
+body { font: 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif; repeat-x; color: #111; }
+h1, h2, h3, h4, h5, h6 { margin: 20px 0 0 0; }
+h1 { font-size: 34px; }
+h2 { font-size: 26px; }
+h3 { font-size: 20px; margin: 25px 0 5px 0; }
+h4 { font-size: 14px; margin: 25px 0 5px 0; font-weight: bold; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+p { font: 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0 0 18px 0; font-size: 15px; color: #111; }
+a { text-decoration: none; color: #c94c4c; }
+a:hover { color: #000; }
+em { font-style: italic; }
+ul { margin: 0 0 15px 15px; list-style-type: circle; font-size: 15px; }
+ol { margin: 15px 0 15px 20px; list-style-type: decimal; }
+strong, b { font-weight: bold; }
+blockquote { margin: 20px 40px; padding: 10px; background-color: #eee; border: 1px #ddd solid; }
+
+/* ------------- */
+/* -- Helpers -- */
+/* ------------- */
+.hide { display: none; }
+.right { float: right; }
+.post-line { height: 2px; background: #eee; margin: 40px 0; }
+.page-overview { width: 896px; text-align: center; margin: 5px 0 0 0; background: #f5f5f5; padding: 20px 10px; border: 2px #eee solid; text-shadow: 0 2px 0 white; }
+.page-overview h2 { font-size: 20px; color: #444; font-weight: bold; margin: 0 0 10px 0; }
+.page-overview h3 { font-size: 16px; color: #555; line-height: 26px; margin: 0; font-weight: normal; }
+.current { color: #c94c4c !important; }
+
+/* ------------ */
+/* -- Header -- */
+/* ------------ */
+#header { padding: 60px 0 8px 0; overflow: hidden; border-bottom: 5px #eee solid; }
+#header h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 28px; letter-spacing: -1px; color: #000; font-weight: bold; float: left; padding: 0; margin: 0; }
+
+/* --------- */
+/* -- Nav -- */
+/* --------- */
+#nav { float: right; list-style: none; overflow: hidden; margin: 5px 0 0 0; }
+#nav li { float: left; }
+#nav li span { padding: 0 10px; }
+#nav li a { float: left; color: #222; }
+#nav li a:hover { color: #c94c4c; }
+
+/* --------- */
+/* -- Menu -- */
+/* --------- */
+#menu {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-bottom:10px;
+}
+#menu li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu a {
+	color: #c94c4c;
+	font-weight:bold;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+	list-style:none;
+}
+#menu a:hover {
+	color: #111;
+	padding-bottom: 8px;
+	list-style: none;
+}
+
+/* ------------- */
+/* -- Content -- */
+/* ------------- */
+#main { float: left; width: 100%; padding: 10px 0 0px 0; }
+#content { float: left; width: 510px; }
+#sidebar { float: right; width: 300px; line-height: 20px;padding-top:30px; }
+.posts #sidebar { width: 300px; }
+
+/* -------------- */
+/* -- Sidebars -- */
+/* -------------- */
+#sidebar ul { font-size: 13px; }
+#sidebar h3 { font-size: 14px; font-weight: normal; font-style: italic; margin: 0 0 10px 0; }
+#sidebar h3 span { font-style: normal; }
+#sidebar p { font-size: 13px; line-height: 21px; }
+.line { clear: both; height: 2px; background: #eee; margin: 20px 0; }
+.chris-creed { width: 90px; height: 90px; border: 2px #ddd solid !important; margin: 0 0 8px 0; }
+.twitter-link { margin: -12px 0 20px 0; }
+.freelance-more-details-link { display: block; margin-top: -12px; }
+
+/* ------------------- */
+/* -- Posts / Pages -- */
+/* ------------------- */
+#latest-articles-title { margin: 0 0 25px 0; font-size: 18px; font-style: italic; }
+.post-title { font-size: 15px; margin: 0 0 -2px 0; font-weight: normal; }
+.post-meta { font-size: 16px; color: #aaa; margin: 0 0 10px 0; font-weight: normal; }
+.single-post-title { font-size: 24px; margin: 0 0 -2px 0; font-weight: bold; }
+.single-post-meta { font-size: 18px; color: #aaa; margin: 4px 0 15px 0; font-weight: normal; }
+.twitter-share-button { margin: 5px 0 0 0; }
+.post-line { height: 2px; background: #eee; margin: 14px 0; }
+#archive-link { margin: 40px 0 0 0; }
+.home-link { display: block; margin: -5px 0 10px 0; padding: 0; font-size: 14px; }
+.services-title { font-size: 24px; margin: 0 0 15px 0; padding: 0; }
+.service-sub-title { font-size: 18px; font-style: italic; }
+.share { margin: 25px 0 0 0; border-top: 2px #f5f5f5 solid; padding: 10px 0 0 0; }
+.twitter-post-link { clear: both; font-size: 14px; margin: 50px 0 0 0 !important; }
+
+/* -------------- */
+/* -- Freebies -- */
+/* -------------- */
+.free-page { overflow: hidden; }
+#free-items { overflow: hidden; padding: 30px 0 0 0; }
+.free-item { float: left; width: 280px; margin: 45px 0 0 0; min-height: 276px; }
+.free-item a { display: block; }
+.free-item img { width: 280px !important; height: 200px; border: 1px #eee solid; }
+.free-item-title { font-size: 14px; color: #333; font-weight: bold; margin: 10px 0 5px 0; }
+.free-item p { font-size: 12px; margin: 0; line-height: 20px; }
+.last { float: right; margin-right: 2px; }
+#freebies { margin: 50px 0 0 0; overflow: hidden; }
+#freebies .free { float: left; margin: 32px 0 0 40px; width: 280px; font-size: 12px; }
+#freebies .first { clear: both; margin-left: 0; }
+#freebies img { border: 1px #eee solid; }
+.free-title { font-size: 14px; color: #333; font-weight: normal; margin: 0 0 5px 0; }
+#freebies .top { margin-top: 0; }
+
+/* ----------------- */
+/* -- Free Single -- */
+/* ----------------- */
+#free-item-header h2 { color: #333; font-size: 20px; font-weight: bold; margin: 0 0 -2px 0; padding: 0; }
+#free-item-header h3 { float: left; color: #888; font-size: 14px; margin: 0 0 16px 0; padding: 0; font-weight: normal; }
+.theme-large-screenshot, .free-large-screenshot { border: 1px #eee solid; width: 510px; }
+.free-item-overview { font-size: 14px; line-height: 24px; margin: 25px 0 0 0; padding-bottom: 10px; overflow: hidden; }
+.free-item-overview p { margin-bottom: 0; }
+.free-single #content .line { margin: 30px 0 18px 0; }
+#free-item-header .download-button { float: right; margin: -18px -10px 0 0; }
+.download { margin: 10px 0 0 0; height: 40px; }
+.download-button { float: left; display: block; background: url(images/download-button.png) no-repeat; width: 140px; height: 40px; margin: 0 0 0 -7px; }
+.download-button:hover { display: block; background: url(images/download-button-hover.png) no-repeat; width: 140px; height: 40px; }
+.no-of-downloads { float: left; color: #444; font-size: 20px; margin: 8px 0 0 15px; }
+#share { font-size: 14px; line-height: 24px; }
+#share h4 { font-size: 14px; color: #444; font-weight: bold; margin: 0 0 5px 0; }
+#share p { margin: 0 0 5px 0; }
+
+/* ------------- */
+/* -- Contact -- */
+/* ------------- */
+.contact-page #content { width: 565px; }
+#contact-form { clear: both; margin: 30px 0 0 0; }
+#contact-form input[type=text] { background: url(images/input-bg.png) repeat-x; width: 270px; height: 42px; border: 1px #e5e5e5 solid; margin: 0 0 15px 0; padding: 0 15px; color: #555; font-size: 14px; font: 14px/24px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#contact-form textarea { background: url(images/textarea-bg.png) repeat-x; width: 470px; height: 190px; border: 1px #e5e5e5 solid; padding: 15px 15px; font-size: 14px; line-height: 24px; font: 14px/24px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #555; }
+#contact-form .submit { background: url(images/submit-button.png) no-repeat; width: 140px; height: 40px; cursor: pointer; border: none; text-indent: -9999px; margin: 10px 0 0 -7px;  }
+#contact-form .submit:hover { background: url(images/submit-button-hover.png) no-repeat; }
+#response { padding: 10px; border: 2px #eee solid; background-color: #f5f5f5; color: #c94c4c; margin: 20px 0 -10px 0; }
+
+/* ------------ */
+/* -- Footer -- */
+/* ------------ */
+#footer { float: left; margin: 70px 0 0 0; padding: 5px 0 30px 0; width: 100%; color: #aaa; border-top: 5px #eee solid; }
+#footer p { font-size: 14px; color: #888; }
+.copyright{ float: left; }
+.twitter { float: right; }

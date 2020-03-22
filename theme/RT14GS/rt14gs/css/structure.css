@@ -1,0 +1,77 @@
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+#header {
+	padding:0 15px;
+	height:130px;
+}
+#header h1 {
+	float:left;
+	padding:15px 0;
+}
+#header .socialIcons {
+	float:right;
+	padding:20px 15px 0 0;
+}
+.socialIcons ul {
+	margin: 0;
+}
+.socialIcons li {
+	list-style:none;
+	display:inline;
+}
+#content {
+	float:left;
+	width:650px;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+	border-left:1px solid #dcdcdc;
+}
+#footer {
+	border-top:1px solid #dcdcdc;
+	text-align:center;
+	margin:20px 0 0 0;
+}
+/*Main Menu*/
+#navcontainer {
+}
+#navcontainer ul {
+	padding: 0;
+	margin: 0;
+	background-color: #dcdcdc;
+	color: #666565;
+	float: left;
+	width: 100%;
+	font-family: arial, helvetica, sans-serif;
+}
+#navcontainer ul li { 
+	display: inline; 
+}
+#navcontainer ul li a {
+	padding: 10px 20px;
+	background-color: #dcdcdc;
+	color: #666565;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fff;
+}
+#navcontainer ul li a:hover, #navcontainer .active a {
+	background-color: #818d75;
+	color: #fff;
+}
+
+
+/* P01 Contact Form */
+.p01-contact {padding: 20px 0 0 50px;}
+.p01-contact .text input {width: 400px;}
+.p01-contact textarea {width: 400px;}
+.p01-contact .captcha input {width: 150px;}
+.p01-contact .submit {width: 75px; height: 30px; margin: 0 0 0 335px;}
+
+/* GS Blog */
+.blog_post_container {margin: 0 0 25px 0; padding: 0 0 10px 0; border-bottom: 1px solid #dcdcdc;}
+.blog_page_navigation .left a {float:left; padding: 0 15px;}
+.blog_page_navigation .right a {float:right; padding: 0 15px;}

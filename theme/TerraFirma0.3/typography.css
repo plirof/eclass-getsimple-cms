@@ -1,0 +1,43 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Modified for Concrete5 by Jordan Lev - http://jordanlev.com */
+/* Modified for GetSimple by Mark Moore - http://nwlinux.com 15Nov11 */
+
+body {
+	/* customize_body */ font: normal normal normal 14px Arial, Helvetica, sans-serif; /* customize_body */
+	/* customize_body */ color: #5A554E; /* customize_body */
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p, ol, ul, dl {
+	text-align: justify;
+	line-height: 2.2;
+}
+
+strong {
+	color: #4A3E29;
+}
+
+a {
+	/* customize_link */ color: #506C00; /* customize_link */
+}
+
+a:hover {
+	text-decoration: none;
+	/* customize_link_hover */ color: #506C00; /* customize_link_hover */
+}
