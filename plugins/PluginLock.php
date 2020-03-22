@@ -14,7 +14,7 @@ $thisfile=basename(__FILE__, ".php");
 register_plugin(
 	$thisfile, 
 	'Plugin Lock', 	
-	'1.0jonmod004', 		
+	'1.0jonmod005', 		
 	'Michał Gańko',
 	'http://flexphperia.net', 
 	'This plugin allows to block access to specified plugins or plugin area parts for admin panel selected users.',
@@ -76,11 +76,14 @@ function plugin_lock_check_rules(){
 			$tmima=substr($USR,8);
 			//echo "<BR>71 DEBUG--------TMHMA=$tmima -------------- _GETid = ".$_REQUEST['id'];
 			//print_r($_REQUEST);	
-			// allow only users TMIMA to load
+			// allow only users TMIMA to load			
+			@$request_pc_url=$_REQUEST['pc_url'];
+			if($request_pc_url===null) $request_pc_url="aaaa";
+
 			if ((strpos($_REQUEST['id'], $tmima)!== false) 
-				|| (strpos($_REQUEST['id'], 'pages_comments')!== false) // allow seeing global comments page
-				|| (strpos($_REQUEST['id'], 'test-user22page')!== false ) 
-				|| (strpos($_REQUEST['pc_url'], $tmima)!== false) 
+				|| ((strpos($_REQUEST['id'], 'pages_comments')!== false) && (strpos($_REQUEST['action'], 'pc_viewpages')!== false) )// allow seeing global comments page		 
+				|| ((strpos($_REQUEST['id'], 'pages_comments')!== false) && (strpos($request_pc_url, $tmima)!== false) )
+				|| (strpos($_REQUEST['id'], 'test-user22page')!== false )
 			) {
 
 				//echo "<BR>74 DEBUG------------(=='test-user22page'---------- "; 
