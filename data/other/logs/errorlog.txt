@@ -1,0 +1,5 @@
+[22-Mar-2020 20:21:35 Europe/Athens] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/eclass-getsimple-cms/admin/upload.php on line 183
+[22-Mar-2020 20:21:35 Europe/Athens] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/eclass-getsimple-cms/admin/upload.php on line 235
+[22-Mar-2020 20:21:35 Europe/Athens] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/eclass-getsimple-cms/admin/upload.php on line 271
+[22-Mar-2020 20:21:35 Europe/Athens] PHP Notice:  A non well formed numeric value encountered in /opt/lampp/htdocs/eclass-getsimple-cms/admin/inc/basic.php on line 1198
+[22-Mar-2020 20:21:48 Europe/Athens] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function '' not found or invalid function name in /opt/lampp/htdocs/eclass-getsimple-cms/admin/load.php on line 39

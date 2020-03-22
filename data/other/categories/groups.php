@@ -1,1 +1,1 @@
-<?php $admin = array();$page404 = array();$groups = array("admin"=>$admin,"page404"=>$page404); ?>
+<?php $admin = array('admin');$page404 = array();$groups = array("admin"=>$admin,"page404"=>$page404); ?>

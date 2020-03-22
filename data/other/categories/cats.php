@@ -1,1 +1,1 @@
-<?php $cats = array("page404"=>array('admin'),"index"=>array('admin')); ?>
+<?php $cats = array("a1"=>array('teacher-a1','admin'),"b1"=>array('teacher-b1','admin'),"d1"=>array('teacher-d1','admin'),"e1"=>array('teacher-e1','admin'),"g1"=>array('teacher-g1','admin'),"na"=>array('admin'),"selda-diafora"=>array('admin'),"st1"=>array('teacher-st1','admin'),"test1"=>array('admin'),"page404"=>array('admin'),"index"=>array('admin')); ?>
