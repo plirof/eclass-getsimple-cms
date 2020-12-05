@@ -162,7 +162,8 @@ class P01contactForm
         
         // populate fields values and check errors
         $hasFieldsErrors = false;
-        $fields = $this->getFields();
+        $fields = $this->getFields(); //echo "<h3>jon DEBUG 166:fields: ";print_r($fields,true);echo '$field["title"]'."___END DEBUG</h3>";
+        $jon_csv="";
         foreach ($fields as $field) {
             if (!isset($posted[$field->id])) {
                 continue;
@@ -170,8 +171,12 @@ class P01contactForm
             $posted_val = $posted[$field->id];
             $field->setValue($posted_val);
             $hasFieldsErrors = !$field->validate() || $hasFieldsErrors;
+            $jon_csv=$jon_csv.$posted_val."|_|"; // jon 201204a Add current $field Submitted Results
         }
-
+        
+        $form_name="jonToDoGetFormName"; // jon 201204a temp name - ToDo: DynamicGet Form name from a (hidden) field
+        $this->jon_log($jon_csv,$form_name); // jon put data to log file  201204a 
+        //echo "<h1>jon DEBUG 179: jon_csv=".$jon_csv."____END DEBUG</h1>";
         // check errors and set status
         if ($this->config('disable')) {
             $this->setStatus('disable');
@@ -190,6 +195,17 @@ class P01contactForm
         $this->reset();
     }
 
+    // jon_log record data to file GSDATAOTHERPATH.'logs/P01contact_log_XXXX.log'
+    private function jon_log($log_line,$form_name="default") // jon 201204a
+    {
+        $log_name = 'P01contact_log_'.$form_name.'.log';
+        $log_path = GSDATAOTHERPATH.'logs/';
+        $log_file = $log_path . $log_name;
+        //cho "<HR>FIELDaaaaaaa=".$this->field[4]."<HR>"; //getField($id)
+        $log_result = file_put_contents($log_file,$log_line.PHP_EOL , FILE_APPEND | LOCK_EX);
+        //echo "<h1>jon DEBUG 204: INSIDE jon_log(log_line) log_line,jon_csv=".$log_line."___log_result=$log_result_________END DEBUG</h1>";
+         
+    }// jon 201204a
 
     /*
      *  SECURITY
@@ -297,6 +313,7 @@ class P01contactForm
         return $html;
     }
 
+
     /**
      * Return an html display of the form status
      * @return string the <div>
@@ -372,6 +389,7 @@ class P01contactForm
                     break;
             }
         }
+         print_r($tpl_data);//jon
         $html = $this->manager->renderTemplate('mail_template', $tpl_data);
         $text = strip_tags($html);
 
@@ -394,11 +412,15 @@ class P01contactForm
         $content .= "--$mime_boundary--\n\n";
 
 
+        echo "<hr size=7 >JON 418 :<BR> $text   <hr> $html<hr size=7 >";
+
         // debug
         if ($this->config('debug')) {
             $this->debug(array($headers, $targets, $subject, $text, $html));
             return $this->setStatus('sent_debug');
         }
+
+
 
         // send mail
         $success = mail($targets, $encoded_subject, $content, $headers);

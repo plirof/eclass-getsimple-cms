@@ -25,7 +25,6 @@
 			//if doesn't come from form
 			$mi_array = $temp;
 			$tp = 'noenter2';
-			$tp = 'pc'; //jon fix 201203c fixed $_SESSION error when big posts...
 			$seg= 6;
 			$msgshw = '*** '.strtoupper(i18n_r('pages_comments/MSG_pcERR')).' ***\n';
 			$msgshw .= '$_SESSION: '.$_SESSION["pc_token".$_POST['guest']['q_count']].'\n';

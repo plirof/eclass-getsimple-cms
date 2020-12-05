@@ -1,0 +1,116 @@
+
+https://github.com/nliautaud/p01contact/wiki/Syntax
+
+
+Syntax
+Nicolas Liautaud edited this page on 21 Oct 2017 · 6 revisions
+This page describe the tags syntax that can be parsed from text, for exemple from CMS pages content. Each tag generates a distinct functional form.
+
+This is a default contact form :
+
+(% contact %)
+
+Simple.
+Parameters are separated by commas and listed after a semicolon.
+
+(% contact : parameter, parameter, ... %)
+(% contact : 
+    parameter,
+    parameter,
+    ...
+%)
+Parameters can be email addresses or fields.
+
+(% contact : address@domain.ext, another@domain.ext, ... %)
+(% contact : field, field, field, ... %)
+(% contact : address@domain.ext, field, field, ... %)
+If you don't specify addresses, the form will use the default ones defined in settings. If you don't specify fields, the form will use the default ones defined in settings.
+
+Form-specific language
+The word contact may be followed by a two-letters language code to set the form language. Known fields and messages will be translated (see i18n).
+
+(% contact fr %)
+Fields types
+Any standard field type will be displayed accordingly on the form and will report its value in the received email.
+
+Standard fields types	
+text	one-line text field
+textarea	multi-line text area
+checkbox	one or more check boxes and labels
+radio	one or more radio buttons and labels
+select	drop down list with defined values
+email, url, tel,
+date, month, week, time,
+number, color, range, search	HTML5 inputs
+Modern browsers will provide suitable fields inputs and validate their content. Some of them are also validated server-side like email, url and tel.
+
+Some fields types will have an additional behavior :
+
+Special fields types	
+name	a text field used as source name in the received email.
+email	is used as source address in the received email.
+subject	a text field used as subject in the received email.
+askcopy	a checkbox allowing the user to receive a copy of the email.
+message	textarea with a minimum text length that can be defined in settings.
+captcha	a Google reCapcha field (must be configured in the settings).
+password	password field with required input server side verification.
+Fields options
+The field options are defined after the field type, to customize it.
+
+Symbol	Description	Note	Example
+!	Required field	A required field left empty will display a "required" error.	email!
+"..."	Custom label	Will replace the default one.	email "Your email"
+(...)	Description	Shown next to the label.	message (please be polite)
+= ...	Default value or
+Required value	The value will be pre-filled when it makes sense.	name = Jean-Claude
+password = secret1234
+=< ...	Placeholder value	Shown when the field is empty.	email =< name@domain.com
+=> ...	Locked value	The field value will be set and not editable.	subject => Love enquiries
+Checkbox, radio and select fields default value may have multiple options separated by vertical bars. By using a semicolon next to an option, you can define the selected one(s).
+
+checkbox = a single option
+checkbox = an option |: a selected option |: another selected option
+radio = an option |: the selected option
+select = option one | option two |: selected option three
+Multiple options have to be used in the following order :
+
+fieldType! "text" => value | value
+Examples
+Default :
+
+(% contact %)
+Default with two custom recipients :
+
+(% contact : recipient@domain.ext, other@domain.ext %)
+A custom minimal one :
+
+(% contact : email!, message! %)
+A custom big one :
+
+(% contact fr : 
+    address@domain.ext, another@domain.ext,
+    subject => "About this script",
+    email!,
+    textarea "How old is born Napoléon?",
+    tel,
+    radio "Do you like this script?" = Yes | No, 
+    url (Website or blog),
+    select = One | Two :| Three | Four | Five ,
+    message! = Say something,
+    password = tomato,
+    askcopy
+%)
+ Pages 7
+Find a Page…
+Home
+Emails
+GetSimple plugin
+Localization (i18n)
+Pico CMS plugin
+Settings
+Syntax
+Clone this wiki locally
+https://github.com/nliautaud/p01contact.wiki.git
+
+
+_____________________________________________________________

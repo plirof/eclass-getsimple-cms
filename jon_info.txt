@@ -1,0 +1,10 @@
+
+
+
+201202d-
+/HTMLs folder
+<iframe frameborder="0" height="600" src="./HTMLs/getsimple_eclass_C-ST.html" width="100%"></iframe>
+
+temp - edit shared HTMLs (made for quicker updates & to avoid the comment session bug)
+http://101.dimotika.tk/HTMLs/edit-c-st.php
+http://101.dimotika.tk/HTMLs/edit-a-b.php
